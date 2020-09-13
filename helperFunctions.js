@@ -6,7 +6,7 @@ class serverLoger {
   constructor(config) {
     if (!config) {
       this.writeToLogFile = true
-      this.path = path.join(__dirname, "..", "server.log") || path.join(__dirname, "server.log")
+      this.path = path.join(__dirname, "..", "..", "..", "server.log") || path.join(__dirname, "server.log")
     } else {
       this.writeToLogFile = !config.writeToLogFile ? false : true
       if (this.writeToLogFile) {
